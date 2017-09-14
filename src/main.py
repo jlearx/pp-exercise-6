@@ -5,7 +5,9 @@ Created on Sep 14, 2017
 '''
 
 def isPalindrome(inputStr):
-    return True
+    forward = inputStr
+    backward = inputStr[::-1]
+    return (forward == backward)
 
 if __name__ == '__main__':
     userStr = input("Please enter a string: ").strip()
